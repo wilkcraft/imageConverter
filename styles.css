@@ -1,0 +1,95 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adaptable width for smaller screens */
+    max-width: 500px; /* Limit width on larger screens */
+    box-sizing: border-box;
+}
+
+/* Header styles */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.8rem; /* Font size scales */
+}
+
+/* Input and buttons */
+input, select, button {
+    width: 100%; /* Make controls stack and take full width */
+    margin: 10px 0; /* Add vertical spacing */
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Download links */
+#downloads a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+#downloads a:hover {
+    background-color: #e9ecef;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    input, select, button {
+        font-size: 0.8rem;
+    }
+
+    #downloads a {
+        font-size: 0.8rem;
+    }
+}
